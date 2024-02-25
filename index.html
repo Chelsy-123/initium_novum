@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div id="container">
+    <div id="innerContainer">
+        <h1 id="heading">Bill Generator By Initium Novum </h1>
+        <form id="billing-form" >
+          <label for="customer-name">Customer Name:</label><br>
+          <input type="text" id="customer-name" name="customer-name"><br>
+          <table id="item-table">
+               <tr>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                
+              </tr>
+            
+            
+              <tr>
+                <td><input type="text" id="item-name" name="item-name-1"></td>
+                <td><input type="number" id="quantity"  name="quantity-1" value="1"></td>
+                <td><input type="number" id="price"  name="price-1"></td>
+               
+              </tr>
+            
+          </table>
+          <button type="button" id="add-item">Add Item</button><br>
+          
+          <label for="total">Total:</label><br>
+          <input type="number" id="total" name="total" readonly><br>
+          <button type="button" id="generate-bill">Generate Bill</button><br>
+         </div>
+          <div id="bill"></div>
+        </form>
+    </div>   
+       
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
